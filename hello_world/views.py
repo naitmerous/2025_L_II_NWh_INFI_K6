@@ -9,11 +9,11 @@ msg = "Hello World!"
 @app.route('/')
 def index():
     name = "Fabian"
-    response = {
+    response_data = {
         "imie": name,
         "msg": "Hello, World!"
         }
-    return jsonify(response)
+    return jsonify(response_data)
 
 @app.route('/outputs')
 def supported_output():
